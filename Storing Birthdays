@@ -1,0 +1,11 @@
+friend1 = "12/01/2005"
+friend2 = "25/03/2005"
+friend3 = "18/07/2004"
+friend4 = "09/09/2005"
+friend5 = "30/12/2004"
+
+print(friend1)
+print(friend2)
+print(friend3)
+print(friend4)
+print(friend5)
