@@ -1,0 +1,4 @@
+word = "congratulations"
+upper_case_word = word.upper()
+print("Original word:", word)
+print("Convert to uppercase:", upper_case_word)
