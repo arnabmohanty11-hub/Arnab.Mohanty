@@ -1,0 +1,53 @@
+print("===My Daily Schedule===")
+temperature = int(input("Enter today's temperature in Celsius: "))
+
+if temperature < 20:
+    activity = "read at home!"
+    weather_message = "The weather is cold today."
+else:
+    activity = "play outside!"
+    weather_message = "the weather is hot today."
+
+
+print(weather_message)
+print("Do", activity)
+
+is_raining = input("Is it raining? (yes/no): ")
+
+if is_raining == "yes":
+    print("Do an indoor activity")
+
+homework_time = int(input("Enter homework time in minutes: "))
+
+if homework_time > 60:
+    needs_break = "yes"
+    print("You have a long homework session today.")
+    print("Take a short break before your", activity)
+else:
+    needs_break = "no"
+    print("Homework time is short today.")
+    print("No long break needed before your", activity)
+
+has_free_time = input("Do you have free time today? (yes/no): ")
+
+if has_free_time == "yes":
+    final_task = "hobby time"
+    message = "You have free time."
+    action = "Enjoy your"
+else:
+    final_task = "planning time"
+    message = "You don't have much free time."
+    action = "Use some time for"
+
+print(message)
+print(action, final_task)
+
+print()
+print("Daily activity check complete!")
+
+print("SUMMARY OF DAILY ACTIVITY PLANNER")
+print("Temperature:", temperature)
+print("Activity Chosen:", activity)
+print("Raining:", is_raining)
+print("Study Break:", needs_break)
+print("Final Task:", final_task)
