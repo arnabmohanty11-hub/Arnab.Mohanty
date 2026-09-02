@@ -1,0 +1,30 @@
+import turtle
+
+# Background
+turtle.bgcolor("lightcyan")
+
+# Create turtle
+t = turtle.Turtle()
+
+t.shape("turtle")
+t.color("navy")
+t.fillcolor("lightyellow")
+
+# Draw the square
+t.begin_fill()
+
+t.forward(150)
+t.right(90)
+
+t.forward(150)
+t.right(90)
+
+t.forward(150)
+t.right(90)
+
+t.forward(150)
+t.right(90)
+
+t.end_fill()
+
+turtle.done()
