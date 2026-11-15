@@ -1,0 +1,28 @@
+grades = {
+    "Alice": 88,
+    "Bob": 74,
+    "Charlie": 95,
+    "Diana": 62,
+    "Ethan": 81
+}
+total = 0
+count = 0
+for score in grades.values():
+    total += score
+    count += 1
+
+average = total / count
+print("Class Average:", average)
+
+
+top_student = max(grades, key=grades.get)
+bottom_student = min(grades, key=grades.get)
+
+print("Top Scorer:", top_student, "-", grades[top_student])
+print("Bottom Scorer:", bottom_student, "-", grades[bottom_student])
+
+
+name = input("Enter a student's name to search: ")
+result = grades.get(name, "Student not found in the grade book.")
+
+print("Grade:", result)
