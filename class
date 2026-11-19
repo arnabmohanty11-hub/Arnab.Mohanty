@@ -1,0 +1,4 @@
+class student:
+    grade=9
+    print("I study in class",grade)
+Arnab=student()
