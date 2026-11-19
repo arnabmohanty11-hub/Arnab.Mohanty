@@ -1,0 +1,15 @@
+class Vehicle:
+    def __init__(self, max_speed, mileage):
+
+        self.max_speed = max_speed
+        self.mileage = mileage
+Speed=int(input("Enter the max speed of the vehicle: "))
+Mileage=int(input("Enter the mileage of the vehicle: "))
+ModelX=Vehicle(Speed, Mileage)
+Mercedes=Vehicle(250, 15)
+
+print("Model X max speed is:", ModelX.max_speed, "kmph")
+print("Model X mileage is:", ModelX.mileage, "kmpl")
+
+print("Mercedes max speed is:", Mercedes.max_speed, "kmph")
+print("Mercedes mileage is:", Mercedes.mileage, "kmpl")
